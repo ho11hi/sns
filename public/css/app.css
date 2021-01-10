@@ -11306,6 +11306,10 @@ footer {
   margin-bottom: 20px;
 }
 
+.user > img {
+  background-color: #fff;
+}
+
 .user img {
   width: 100px;
   height: 100px;
@@ -11379,6 +11383,7 @@ footer {
 
 .users-form input[type=file] {
   font-size: 14px;
+  overflow: hidden;
 }
 
 

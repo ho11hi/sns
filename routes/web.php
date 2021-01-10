@@ -18,7 +18,7 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('posts', 'PostsController');
-    Route::resource('users', 'UsersController', ['except' => ['create', 'store', 'delete']]);
+    Route::resource('users', 'UsersController', ['only' => ['index', 'show', 'edit', 'update']]);
 });
 
 // async
