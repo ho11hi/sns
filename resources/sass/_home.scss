@@ -1,4 +1,6 @@
-/* reset ================================ */
+// **********************************************
+// リセット
+// **********************************************
 * {
    box-sizing: border-box;
 }
@@ -42,35 +44,49 @@ form input[type="submit"] {
    cursor: pointer;
 }
 
-/* 共通レイアウト ================================ */
+// **********************************************
+// 共通レイアウト
+// **********************************************
 body {
    color: #2d3133;
-   background-color: #00008c;
+   background-color: #f5f8fa;
    margin: 0;
    min-height: 1vh;
 }
 
 .main {
-   position: absolute;
-   top: 64px;
+   // position: absolute;
+   // top: 64px;
+   padding: 50px 0;
    width: 100%;
-   height: auto;
-   min-height: 100%;
-   background-color: #f5f8fa;
+   min-height: calc(100vh - 70px - 70px);
+   background-color: #effafd;
 }
 
 .container {
    max-width: 600px;
-   margin: 60px auto;
+   // margin: 60px auto;
    padding-left: 15px;
    padding-right: 15px;
    clear: both;
 }
 
-/* ヘッダー ================================ */
+.heading {
+   font-weight: 300;
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 35px;
+   color: #37379e;
+}
+
+// **********************************************
+// ヘッダー
+// **********************************************
 header {
-   height: 64px;
-   position: absolute;
+   height: 70px;
+   // position: absolute;
+   background-color: #00008c;
+
    z-index: 1;
    width: 100%;
 }
@@ -121,7 +137,9 @@ header {
    font-size: 13px;
 }
 
-/* top ================================ */
+// **********************************************
+// トップ
+// **********************************************
 .top-main {
    padding: 200px 0 100px;
    text-align: center;
@@ -154,39 +172,34 @@ header {
 }
 
 /* about ================================ */
-.about-main {
-   padding: 180px 8% 0;
-   color: white;
-}
+// .about-main {
+//    padding: 180px 8% 0;
+//    color: white;
+// }
 
-.about-main h2 {
-   font-size: 64px;
-   font-weight: 500;
-   line-height: 1.4;
-}
+// .about-main h2 {
+//    font-size: 64px;
+//    font-weight: 500;
+//    line-height: 1.4;
+// }
 
-.about-main p {
-   font-weight: 200;
-   font-size: 20px;
-}
+// .about-main p {
+//    font-weight: 200;
+//    font-size: 20px;
+// }
 
-.about-img {
-   width: 84%;
-}
+// .about-img {
+//    width: 84%;
+// }
 
-/* フォーム================================ */
+// **********************************************
+// フォーム
+// **********************************************
 .form {
    max-width: 600px;
    margin: 0 auto;
    background-color: white;
    box-shadow: 0 2px 6px #c1ced7;
-}
-
-.form-heading {
-   font-weight: 300;
-   margin: 60px 0 20px;
-   font-size: 48px;
-   color: #bcc8d4;
 }
 
 .form-body {
@@ -216,6 +229,7 @@ input.is-invalid {
    min-height: 110px;
    font-size: 16px;
    letter-spacing: 2px;
+   border-radius: 2px;
 }
 
 .form input[type="submit"] {
@@ -224,19 +238,16 @@ input.is-invalid {
    cursor: pointer;
    font-weight: 300;
    width: 120px;
-   border-radius: 2px;
+   border-radius: 30px;
    margin-top: 8px;
    margin-bottom: 0;
-   float: right;
+   display: block;
+   margin: 0 0 0 auto;
 }
 
-.form-body:after {
-   content: "";
-   display: table;
-   clear: both;
-}
-
-/* フラッシュ ================================ */
+// **********************************************
+// フラッシュメッセージ
+// **********************************************
 .flash {
    padding: 10px 0;
    color: white;
@@ -263,7 +274,17 @@ input.is-invalid {
    font-size: 14px;
 }
 
-/* debugbar ================================ */
-.phpdebugbar {
-   display: none;
+// **********************************************
+// フッター
+// **********************************************
+footer {
+   height: 70px;
+   width: 100%;
+   color: white;
+   font-size: 20px;
+   bottom: 0;
+   background-color: #00008c;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }

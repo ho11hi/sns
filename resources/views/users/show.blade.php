@@ -6,11 +6,11 @@
 <div class="main user-show">
    <div class="container">
       <div class="user">
+         <h2>{{ $user->name }}</h2>
          <img src="{{ asset('storage/user_img/'.$user->image_name) }}">
-         <h2>{{ 'U'.$user->id.':' }}{{ $user->name }}</h2>
-         <p>{{ $user->email }}</p>
+         {{-- <p>{{ $user->email }}</p> --}}
          @if(Auth::id() === $user->id)
-            <a href="{{ route('users.edit',$user->id) }}">プロフィール編集</a>
+         <a href="{{ route('users.edit',$user->id) }}" style="display: block;">プロフィール編集</a>
          @endif
       </div>
       <show-component

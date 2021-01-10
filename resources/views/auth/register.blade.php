@@ -4,16 +4,16 @@
 @section('content')
 <div class="main users-new">
    <div class="container">
-      <div class="form-heading">新規ユーザー登録</div>
+      <div class="heading">新規ユーザー登録</div>
       <form method="POST" action="{{ route('register') }}" class="form users-form">
          @csrf
 
          <div class="form-body">
             <p>ユーザー名</p>
             @error('name')
-               <div class="form-error" role="alert">
-                  {{ $message }}
-               </div>
+            <div class="form-error" role="alert">
+               {{ $message }}
+            </div>
             @enderror
             <input name="name" value="{{ old('name') }}"
                class="@error('name')is-invalid @enderror" autocomplete="name"
@@ -21,18 +21,18 @@
 
             <p>メールアドレス</p>
             @error('email')
-               <div class="form-error" role="alert">
-                  {{ $message }}
-               </div>
+            <div class="form-error" role="alert">
+               {{ $message }}
+            </div>
             @enderror
             <input name="email" value="{{ old('email') }}" type="email"
                class="@error('email')is-invalid @enderror" autocomplete="email">
 
             <p>パスワード</p>
             @error('password')
-               <div id="password" class="form-error" role="alert">
-                  {{ $message }}
-               </div>
+            <div id="password" class="form-error" role="alert">
+               {{ $message }}
+            </div>
             @enderror
             <input type="password" name="password" class="@error('password')is-invalid @enderror"
                autocomplete="new-password">

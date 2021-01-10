@@ -25,15 +25,15 @@
          </like-component>
 
          @if(Auth::id() === $post->user_id)
-            <div class="post-menus">
-               <a href="{{ route('posts.edit',$post->id) }}">編集</a>
-               <form action="{{ route('posts.destroy',$post->id) }}"
-                  method="post">
-                  @csrf
-                  @method('DELETE')
-                  <input type="submit" value="削除" onclick='return confirm("削除しますか？");'>
-               </form>
-            </div>
+         <div class="post-menus">
+            <a href="{{ route('posts.edit',$post->id) }}">編集</a>
+            <form action="{{ route('posts.destroy',$post->id) }}"
+               method="post">
+               @csrf
+               @method('DELETE')
+               <input type="submit" value="削除" onclick='return confirm("削除しますか？");'>
+            </form>
+         </div>
          @endif
       </div>
 

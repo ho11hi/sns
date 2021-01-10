@@ -2079,6 +2079,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -37878,7 +37888,10 @@ var render = function() {
                 }
               }
             },
-            [_vm._v("投稿")]
+            [
+              _c("i", { staticClass: "fas fa-paper-plane -tab" }),
+              _vm._v("投稿")
+            ]
           )
         ]),
         _vm._v(" "),
@@ -37894,7 +37907,7 @@ var render = function() {
                 }
               }
             },
-            [_vm._v("いいね!")]
+            [_c("i", { staticClass: "fas fa-heart -tab" }), _vm._v("いいね")]
           )
         ])
       ]),
@@ -37904,6 +37917,7 @@ var render = function() {
         [
           _c(_vm.currentTabComponent, {
             tag: "component",
+            class: "lists-border-radius",
             attrs: { path: _vm.path, posts: _vm.posts, likes: _vm.likes }
           })
         ],
