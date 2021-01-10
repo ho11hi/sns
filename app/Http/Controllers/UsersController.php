@@ -35,23 +35,27 @@ class UsersController extends Controller
         // 現在表示中のアカウント
         $user = User::where('id', $id)->first();
 
-        // 投稿表示SQL
-        $posts = DB::table('posts as p')
-            ->select('p.user_id as u_id', 'p.id as p_id', 'p.content', 'u.name', 'u.image_name')
-            ->leftJoin('users as u', 'p.user_id', '=', 'u.id')
-            ->where('u.id', $id)
-            ->get();
+        if ($user !== null) {
+            // 投稿表示SQL
+            $posts = DB::table('posts as p')
+                ->select('p.user_id as u_id', 'p.id as p_id', 'p.content', 'u.name', 'u.image_name')
+                ->leftJoin('users as u', 'p.user_id', '=', 'u.id')
+                ->where('u.id', $id)
+                ->get();
 
-        // いいね！表示SQL
-        $likes = DB::table('likes as l')
-            ->select('l.user_id as l_u_id', 'l.post_id as p_id', 'p.content', 'p.user_id as u_id', 'u.name', 'u.image_name')
-            ->leftJoin('posts as p', 'l.post_id', '=', 'p.id')
-            ->leftJoin('users as u', 'p.user_id', '=', 'u.id')
-            ->where('l.user_id', Auth::id())
-            ->orderBy('l_u_id')->orderBy('p_id')
-            ->get();
+            // いいね！表示SQL
+            $likes = DB::table('likes as l')
+                ->select('l.user_id as l_u_id', 'l.post_id as p_id', 'p.content', 'p.user_id as u_id', 'u.name', 'u.image_name')
+                ->leftJoin('posts as p', 'l.post_id', '=', 'p.id')
+                ->leftJoin('users as u', 'p.user_id', '=', 'u.id')
+                ->where('l.user_id', Auth::id())
+                ->orderBy('l_u_id')->orderBy('p_id')
+                ->get();
 
-        return view('users/show', compact('user', 'posts', 'likes'));
+            return view('users/show', compact('user', 'posts', 'likes'));
+        } else {
+            return redirect('users');
+        }
     }
 
     /**
