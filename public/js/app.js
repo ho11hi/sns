@@ -2013,6 +2013,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["path", "likes"]
 });
@@ -2028,6 +2035,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -37780,9 +37794,17 @@ var render = function() {
     _vm._l(_vm.likes, function(item, i) {
       return _c("div", { key: i, staticClass: "posts-index-item" }, [
         _c("div", { staticClass: "post-left" }, [
-          _c("img", {
-            attrs: { src: _vm.path + "storage/user_img/" + item.image_name }
-          })
+          item.image_name !== null
+            ? _c("img", {
+                attrs: { src: _vm.path + "storage/user_img/" + item.image_name }
+              })
+            : _vm._e(),
+          _vm._v(" "),
+          item.image_name === null
+            ? _c("img", {
+                attrs: { src: _vm.path + "assets/default-user-image.png" }
+              })
+            : _vm._e()
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "post-right" }, [
@@ -37828,9 +37850,17 @@ var render = function() {
     _vm._l(_vm.posts, function(item, i) {
       return _c("div", { key: i, staticClass: "posts-index-item" }, [
         _c("div", { staticClass: "post-left" }, [
-          _c("img", {
-            attrs: { src: _vm.path + "storage/user_img/" + item.image_name }
-          })
+          item.image_name !== null
+            ? _c("img", {
+                attrs: { src: _vm.path + "storage/user_img/" + item.image_name }
+              })
+            : _vm._e(),
+          _vm._v(" "),
+          item.image_name === null
+            ? _c("img", {
+                attrs: { src: _vm.path + "assets/default-user-image.png" }
+              })
+            : _vm._e()
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "post-right" }, [

@@ -11,7 +11,12 @@
       @foreach($users as $user)
       <div class="users-index-item">
          <div class="user-left">
-            <img src="{{ asset('storage/user_img/'.$user->image_name) }}">
+            <img @if($user->image_name === null)
+            src="{{ asset('assets/default-user-image.png') }}"
+            @else
+            src="{{ asset('storage/user_img/'.$user->image_name) }}"
+            @endif
+            >
          </div>
          <div class="user-right">
             <a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</a>

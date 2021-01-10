@@ -9,7 +9,13 @@
       @foreach($posts as $post)
       <div class="posts-index-item">
          <div class="post-left">
-            <img src="{{ asset('storage/user_img/'.$post->image_name) }}">
+            <img
+               @if($post->image_name === null)
+            src="{{ asset('assets/default-user-image.png') }}"
+            @else
+            src="{{ asset('storage/user_img/'.$post->image_name) }}"
+            @endif
+            >
          </div>
          <div class="post-right">
             <div class="post-user-name">

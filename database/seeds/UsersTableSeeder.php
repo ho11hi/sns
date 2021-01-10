@@ -19,7 +19,7 @@ class UsersTableSeeder extends Seeder
             'email' => 'test1@example.com',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-            'image_name' => 'default_user.jpg',
+            'image_name' => null,
             'password' => Hash::make('root'),
             'api_token' => Str::random(80)
         ]);
@@ -29,7 +29,7 @@ class UsersTableSeeder extends Seeder
             'email' => 'test2@example.com',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-            'image_name' => '2.jpg',
+            'image_name' => null,
             'password' => Hash::make('root'),
             'api_token' => Str::random(80)
         ]);
@@ -39,7 +39,7 @@ class UsersTableSeeder extends Seeder
             'email' => 'test3@example.com',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-            'image_name' => '3.png',
+            'image_name' => null,
             'password' => Hash::make('root'),
             'api_token' => Str::random(80)
         ]);
@@ -49,7 +49,7 @@ class UsersTableSeeder extends Seeder
             'email' => 'test4@example.com',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-            'image_name' => '4.png',
+            'image_name' => null,
             'password' => Hash::make('root'),
             'api_token' => Str::random(80)
         ]);
@@ -59,7 +59,7 @@ class UsersTableSeeder extends Seeder
             'email' => 'test5@example.com',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-            'image_name' => '5.png',
+            'image_name' => null,
             'password' => Hash::make('root'),
             'api_token' => Str::random(80)
         ]);

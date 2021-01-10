@@ -11271,7 +11271,7 @@ footer {
 .user-left img {
   width: 50px;
   height: 50px;
-  border-radius: 40%;
+  border-radius: 50%;
   box-shadow: 0 2px 6px #c1ced7;
   -o-object-fit: cover;
      object-fit: cover;

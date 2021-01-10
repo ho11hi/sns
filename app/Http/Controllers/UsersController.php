@@ -104,7 +104,7 @@ class UsersController extends Controller
 
         // ストレージファイルに保存（もし前回、画像登録をしていた場合、その画像を削除）
         if ($request->image_name) {
-            if ($user->image_name) {
+            if ($user->image_name !== null) {
                 Storage::delete('public/user_img/' . $user->image_name);
             }
             Storage::disk('public')
