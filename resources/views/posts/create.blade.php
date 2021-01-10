@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','ホーム')
+@section('title','新規投稿')
 
 @section('content')
 <div class="main posts-new">

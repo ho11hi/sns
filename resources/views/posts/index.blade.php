@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','ホーム')
+@section('title','投稿一覧')
 
 @section('content')
 <div class="main posts-index">
@@ -22,7 +22,7 @@
                <a href="{{ route('users.show',$post->user_id) }}">{{ $post->name }}</a>
             </div>
             <a
-               href="{{ route('posts.show',$post->id) }}">P{{ $post->id }}:{{ $post->content }}</a>
+               href="{{ route('posts.show',$post->id) }}">{{ $post->content }}</a>
          </div>
       </div>
       @endforeach

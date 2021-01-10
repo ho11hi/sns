@@ -1,6 +1,5 @@
 @extends('layouts.app')
-@section('title',
-'アカウント編集')
+@section('title','ユーザー編集')
 
 @section('content')
 <div class="main users-edit">
