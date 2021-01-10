@@ -81,6 +81,11 @@ class PostsController extends Controller
             ->groupBy('post_id')
             ->first();
 
+        if ($likecnt === null) {
+            $likecnt['post_id'] = $post->id;
+            $likecnt['count'] = 0;
+        }
+
         return view('posts/show', compact('post', 'time', 'likes', 'likecnt'));
     }
 
