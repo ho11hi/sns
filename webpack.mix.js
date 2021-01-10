@@ -20,5 +20,8 @@ mix.webpackConfig({
 });
 
 mix.browserSync({
-    files: ["resources/views/**/*.blade.php", "public/**/*.*"]
+    files: ["resources/views/**/*.blade.php", "public/**/*.*"],
+    proxy: {
+        target: "http://localhost:8888/99_OP/200915_sns/public/"
+    }
 });
