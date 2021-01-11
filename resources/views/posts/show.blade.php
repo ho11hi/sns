@@ -9,7 +9,15 @@
       <div class="posts-show-item">
          <div class="post-time">{{ $time }}</div>
          <div class="post-user-name">
-            <img src="{{ asset('storage/user_img/'.$post->image_name) }}">
+            <a href="{{route('users.show',$post->user_id)}}">
+               <img
+                  @if($post->image_name === null)
+               src="{{ asset('assets/default-user-image.png') }}"
+               @else
+               src="{{ asset('storage/user_img/'.$post->image_name) }}"
+               @endif
+               >
+            </a>
 
             <a href="">{{ $post->name }}</a>
          </div>

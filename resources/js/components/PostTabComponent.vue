@@ -2,14 +2,16 @@
    <div>
       <div class="posts-index-item" v-for="(item, i) in posts" :key="i">
          <div class="post-left">
-            <img
-               v-if="item.image_name !== null"
-               :src="path + 'storage/user_img/' + item.image_name"
-            />
-            <img
-               v-if="item.image_name === null"
-               :src="path + 'assets/default-user-image.png'"
-            />
+            <a :href="path + 'users/' + item.u_id">
+               <img
+                  v-if="item.image_name !== null"
+                  :src="path + 'storage/user_img/' + item.image_name"
+               />
+               <img
+                  v-if="item.image_name === null"
+                  :src="path + 'assets/default-user-image.png'"
+               />
+            </a>
          </div>
          <div class="post-right">
             <div class="post-user-name">
