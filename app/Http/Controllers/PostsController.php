@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Post;
 use App\User;
+use App\Like;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\PostRequest;
 
@@ -132,8 +133,8 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        Auth::user()->posts()->find($id)->delete();
-        // Post::find($id)->delete();
+        Auth::user()->posts()->find($id)->delete(); // 投稿の削除
+        Like::where('post_id', $id)->delete(); //お気に入りの削除
 
         return redirect()->route('posts.index')
             ->with('flash_message', '削除しました');
