@@ -48,7 +48,7 @@ class UsersController extends Controller
                 ->select('l.user_id as l_u_id', 'l.post_id as p_id', 'p.content', 'p.user_id as u_id', 'u.name', 'u.image_name')
                 ->leftJoin('posts as p', 'l.post_id', '=', 'p.id')
                 ->leftJoin('users as u', 'p.user_id', '=', 'u.id')
-                ->where('l.user_id', Auth::id())
+                ->where('l.user_id', $id)
                 ->orderBy('l_u_id')->orderBy('p_id')
                 ->get();
 
