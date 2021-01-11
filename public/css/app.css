@@ -11358,25 +11358,26 @@ footer {
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
   list-style: none;
+  display: flex;
 }
 
 .fas.-tab {
   margin-right: 2px;
-  color: #7777ff;
+  color: #676767;
 }
 
 .user-tabs li {
-  border-right: 1px solid #f3f3f3;
-  float: left;
+  flex-grow: 1;
+}
+
+.user-tabs li > a {
+  width: 100%;
+  color: #676767;
 }
 
 .user-tabs li.active {
   border-bottom: 2px solid #00008c;
   background-color: #d1e3f9;
-}
-
-.user-tabs li.active a {
-  color: #57575f;
 }
 
 .user-tabs a {
