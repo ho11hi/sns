@@ -9,12 +9,6 @@
          @csrf
 
          <div class="form-body">
-            @if(count($errors) === 1)
-            <div class="form-error" role="alert">
-               メールアドレスまたはパスワードが間違っています
-            </div>
-            @endif
-
             <p>メールアドレス</p>
             @error('email')
             <div class="form-error" role="alert">
