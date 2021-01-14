@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'image_name' => null,
-            'password' => Hash::make('root'),
+            'password' => Hash::make('rootroot'),
             'api_token' => Str::random(80)
         ]);
         DB::table('users')->insert([
@@ -30,7 +30,7 @@ class UsersTableSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'image_name' => null,
-            'password' => Hash::make('root'),
+            'password' => Hash::make('rootroot'),
             'api_token' => Str::random(80)
         ]);
         DB::table('users')->insert([
@@ -40,7 +40,7 @@ class UsersTableSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'image_name' => null,
-            'password' => Hash::make('root'),
+            'password' => Hash::make('rootroot'),
             'api_token' => Str::random(80)
         ]);
         DB::table('users')->insert([
@@ -50,7 +50,7 @@ class UsersTableSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'image_name' => null,
-            'password' => Hash::make('root'),
+            'password' => Hash::make('rootroot'),
             'api_token' => Str::random(80)
         ]);
         DB::table('users')->insert([
@@ -60,7 +60,7 @@ class UsersTableSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             'image_name' => null,
-            'password' => Hash::make('root'),
+            'password' => Hash::make('rootroot'),
             'api_token' => Str::random(80)
         ]);
     }
