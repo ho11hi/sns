@@ -16,4 +16,3 @@ yarn-error.log
 .env.dusk.local
 er.drawio
 /public/**/*.map
-/public/.htaccess

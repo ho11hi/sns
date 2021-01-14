@@ -19,9 +19,3 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
-
-# Basic認証
-AuthUserFile "/home/vagrant/code/tweet_app/public/.htpasswd"
-AuthName "Enter password"
-AuthType BASIC
-require valid-user
