@@ -1,4 +1,4 @@
-# 簡易 SNS アプリ
+# 簡易 SNS アプリ #5
 
 ## デモページ
 
@@ -8,9 +8,9 @@
 
 ## 制作物の詳細
 
-&emsp;&emsp;[制作物の詳細はこちら](https://created-portfolio.com/sns.html/)
+&emsp;&emsp;[制作物の詳細はこちら](https://created-portfolio.com/detail/sns.html)
 
-## 必要要件・環境
+## 各バージョン・環境
 
 -   Laravel: 6.18.35
 -   Vue: 2.6.12
