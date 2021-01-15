@@ -1,17 +1,14 @@
 # 簡易 SNS アプリ
 
-<img src="https://user-images.githubusercontent.com/61940526/104600193-0a34b980-56bc-11eb-886a-3cfc66120898.png">
-<br>
-
 ## デモページ
 
 &emsp;&emsp;[デモページはこちら](https://created-portfolio.com/sns/)<br>
 &emsp;&emsp;メールアドレス： `test1@example.com`<br>
 &emsp;&emsp;パスワード： `rootroot`
 
-## 制作物の説明
+## 制作物の詳細
 
-&emsp;&emsp;[制作物の説明はこちら](https://created-portfolio.com/sns.html/)
+&emsp;&emsp;[制作物の詳細はこちら](https://created-portfolio.com/sns.html/)
 
 ## 必要要件・環境
 
