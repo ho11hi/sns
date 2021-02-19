@@ -14,7 +14,15 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'id' => 1,
+            'name' => 'guest user',
+            'email' => 'guest@example.com',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+            'image_name' => null,
+            'password' => Hash::make('password'),
+            'api_token' => Str::random(80)
+        ]);
+        DB::table('users')->insert([
             'name' => 'test1',
             'email' => 'test1@example.com',
             'created_at' => Carbon::now(),
@@ -24,7 +32,6 @@ class UsersTableSeeder extends Seeder
             'api_token' => Str::random(80)
         ]);
         DB::table('users')->insert([
-            'id' => 2,
             'name' => 'test2',
             'email' => 'test2@example.com',
             'created_at' => Carbon::now(),
@@ -34,7 +41,6 @@ class UsersTableSeeder extends Seeder
             'api_token' => Str::random(80)
         ]);
         DB::table('users')->insert([
-            'id' => 3,
             'name' => 'test3',
             'email' => 'test3@example.com',
             'created_at' => Carbon::now(),
@@ -44,7 +50,6 @@ class UsersTableSeeder extends Seeder
             'api_token' => Str::random(80)
         ]);
         DB::table('users')->insert([
-            'id' => 4,
             'name' => 'test4',
             'email' => 'test4@example.com',
             'created_at' => Carbon::now(),
@@ -54,7 +59,6 @@ class UsersTableSeeder extends Seeder
             'api_token' => Str::random(80)
         ]);
         DB::table('users')->insert([
-            'id' => 5,
             'name' => 'test5',
             'email' => 'test5@example.com',
             'created_at' => Carbon::now(),

@@ -39,6 +39,14 @@
             <input type="submit" value="ログイン">
          </div>
       </form>
+      <form action="{{route('login')}}" method="post"
+         style="text-align:right;">
+         @csrf
+         <input type="hidden" name="email" value="guest@example.com">
+         <input type="hidden" name="password" value="password">
+         <button type="submit"
+            style="margin-top:10px; border:none; color: white;padding:5px 10px; border-radius:5px; background-color: #3490dc;">新規登録せずに、機能を試したい方はこちら</button>
+      </form>
    </div>
 </div>
 @endsection
