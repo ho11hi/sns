@@ -2,7 +2,6 @@
 
 投稿やいいね機能などを実装した、簡易 SNS アプリです。<br>
 [デモページはこちら](https://created-portfolio.com/sns/)<br>
-[制作物の詳細はこちら](https://created-portfolio.com/detail/sns.html)
 
 <img src="https://user-images.githubusercontent.com/61940526/108472814-9300cf80-72d0-11eb-958b-2756c304d9c7.png" width="400px"><br>
 
@@ -28,6 +27,7 @@
 ### その他
 
 -   デモ環境: さくらレンタルサーバー（PHP: 7.4.10）
+-   Laravel による ユニットテストを実施（コントローラー・フラッシュメッセージ・投稿・ログイン・ユーザー登録・ユーザー編集）
 
 ## 画面デザイン
 
