@@ -46,4 +46,3 @@
 ### 投稿詳細画面
 
 <img src="https://user-images.githubusercontent.com/61940526/113224052-84d9a200-92c5-11eb-8771-3197ea9aa5e1.jpg" width="600px"><br>
-
